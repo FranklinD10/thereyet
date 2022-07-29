@@ -1,0 +1,13 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#btn {
+    color: blue;
+    margin: 5%;
+    padding:5;
+    border-radius: 10px;
+    border-color: rebeccapurple;
+    border-style:inset;
+}
