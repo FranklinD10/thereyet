@@ -2,27 +2,29 @@
 import {ask, ask2, happy, unhappy} from "./variables.js";
 
 //declare reusable read/write variable(s)
-var response;
+var response, answer;
 
 //functions
 function run(response) {
     response = prompt(ask);
-    check(response);
+    answer = response.toLowerCase();
+    check(answer);
 }
 
-function check(response) {
-    if (response == "yes") {
+function check(answer) {
+    if (answer == "yes") {
     printHappy();
 } else {
-    loop(response);
+    loop(answer);
     }
 }
 
-function loop(response) { 
+function loop(answer) { 
     do {  
         response = prompt(ask2);
+        answer = response.toLowerCase();
         printUnHappy();        
-    } while (response == "no");
+    } while (answer != "yes");
  printHappy();
 }
 
