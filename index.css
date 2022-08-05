@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+
 html, body {
     margin: 0;
     padding: 0;
@@ -5,9 +7,18 @@ html, body {
 
 #btn {
     color: blue;
-    margin: 5%;
-    padding:5;
+    font-weight: bold;
+    margin: auto;
+    padding: 10px;
     border-radius: 10px;
     border-color: rebeccapurple;
     border-style:inset;
+    cursor: pointer;
 }
+
+div.form {
+    margin: auto;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+  }
